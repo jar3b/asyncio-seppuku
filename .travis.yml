@@ -1,4 +1,8 @@
+sudo: false
 language: python
+cache: pip
+python: 3.5
+script: true
 #python:
 #  - "3.4"
 #  - "3.5"
