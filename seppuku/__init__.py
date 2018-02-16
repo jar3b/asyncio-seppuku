@@ -15,3 +15,6 @@ def killme_after(delay, loop, sig='SIGINT', pid=None):
         if not getattr(loop, 'sig_%s' % sig, False):
             loop.call_later(delay, os.kill, pid or os.getpid(), getattr(signal, sig))
             setattr(loop, 'sig_%s' % sig, True)
+            return True
+
+    return False
