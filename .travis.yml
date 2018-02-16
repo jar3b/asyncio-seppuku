@@ -3,16 +3,11 @@ language: python
 cache: pip
 python: 3.5
 script: true
-#python:
-#  - "3.4"
-#  - "3.5"
-#  - "3.6"
-#  - "3.6-dev"
-#  - "3.7-dev"
-#install:
-#  - pip install -r requirements.txt
 deploy:
   provider: pypi
   user: hellotan
   password:
-    secure: P06mBMn55ZjFFrXsy5q6sVo3xci/qLDArH7Z96ssvBu8O4JuxlO3b7zwcjXDYfyMUFnQLmwsRkpJ+M6xU9GmMCmmcsI2A1rwEMOUKkaSpKD+D3/8x5L3b0v1+BsXKTVcrZcnu9uG1wLBfJAaJcje9EWA1gtVedzSFz+h1DDv9U1QuE8Hx1RyItAfzNznh5GKcTbsP5f50HC/fC16T9ZYYEcFio2kej1SquXb/KpJ+3jUhRtszJbj5jr/aoMEcwzygSBki/wDKF5oafjVqeclbSYtIxHIeLw1btFt75vMeZE6KrrJUSI92WcXxE4wrBsJpmHN3vmwQq66kujg14BG5LUFqgstgQ7qBvwuUMhWpFb1pMW5FhclGRflDzJO2PC5csjuFF76kQrgrq6Sp0z3gP9yxBlMkPY8ZeAaEyQoj/MpASzb/tu+JH+07DA6x2LqTPQOoQueIncuEWXyXLl2VPNb5gqxLoVzr9TN9Xrok1ALySj2/gZ57p/udyCl/SpeENeVatlnWm7/7G5DqGTUM38uc0ORC87o5gQYEdbSH2BWKL/u+2t4l1rBPbdxKNH6NXFp2Hqaz4djZUthFLckMW4WCFqYwc1mZ38lyylvLl2Y1Zknii87csvDhstEl92CEMmsG2AcsM7LEdSXC8czo2GZaMvj+zyHZstWyyf42bM=
+    secure: $pypi.password
+env:
+  global:
+    secure: vfNBM9rEO7d6cdBxqPGWkshY1rwNRaXN3mNKrlgcYzfraeCbAYKL97hsnkFICIBxgtZqD2lPsKhf3PDtwk15baaH7BYL6UPVsBkWzbJ1Fq07eArDIqh7IZZJqqya7XNdStRXK5ejIvD1NpZdO2twYjCe4ZaFlWP30hIg6gD7LQdOSIU7V4lVeH5E0ZvbRjLGf95GEYHQpH0kFJNGnJHI1iqeuWdjtTEpOVn1I0ji+N/L8j5upXQIofC3mYfdI0VKLh052c4FdHDHvsxWegbCVq6anb/aFG9Hka/UJv5bSqaeU6iJNclo6sd0Hks0cA5Z83debWZe/QkS2a2fqtw8G+jGjUWEGdljgkoY8Ddg5od+eXJDo7tA5lA2ObzHdMeWSHtW6BtGiUaYSHNKDJ9N5Pn9FIs53sg2/Mkdu3FkQQ5El+9q8JjH7ZcgGxrgNPcVp50e0hPuuazY1C0Yx0vk42GxjIsGg7e7isY7ra+9j8l9pfeWPaqKw3iy+XamHS7iu6aPDZ0gv8z7KqFSd3EfQEZGzLkqfP93VUgUqt77XR7DZJJkmZjxJQmKgnFHHViwGcyPm5jr+2uSEWvdFPXhJ/j0DE02SQJXaVZuRUT9TgxpFqQbmZ0pF1cxyGNxhFShg716eQrGmS2sQxPjL+rQEwpc454aIPNwsZ5pw43SqTc=
