@@ -12,7 +12,7 @@ idk
 
 ## Installation
 
-via pip: `pip install `
+via pip: `pip install asyncio-seppuku`
 
 ## Usage
 See [examples/simple.py](examples/simple.py)
